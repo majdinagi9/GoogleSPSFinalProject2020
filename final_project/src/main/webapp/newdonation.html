@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <title>Create a new Cause/Donation </title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfZsNNljFVCUke2yKYyLLfPMWXDE3A-wI"></script>
+    <script src="script.js"></script>
+  </head>
+  <!-- onload="printComment()" -->
+  <body>
+   <body onload="fetchBlobstoreUrlAndShowForm()">
+      <a href="/index.html" class="previous">&laquo; Previous</a>
+      <br>
+  <form id="my-form" class="hidden" method="POST" enctype="multipart/form-data">
+    <h1>Add a new Donation</h1>
+    <p>Fill this to create your own donation:</p>
+    <p>Title of Cause/donation:</p>
+    <input maxlength="500" type="text" name="title" >
+    <br>
+    <p>Add description or details of Cause/Donation:</p>
+      <textarea maxlength="500" name="description"></textarea>
+      <br/>
+      <p>Upload an image:</p>
+      <input type="file" name="image">
+      <br/><br/>
+      <button>Submit</button>
+    </form>
+  </body>
+     <br/><br/>
+      <footer class="footer-distributed">
+        <div class="footer-right">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <div class="footer-left">
+          <p class="footer-links">
+            <a href="#">FAMA</a>
+            <a href="#ourCauses"> Our Causess</a>
+            <!-- <a href="#favorite">Favorites</a> -->
+            <a href="#contact">Contact</a>
+          </p>
+          <p>FAMA Charity &copy; 2020</p>
+        </div>
+      </footer>
+
+  </body>
+</html>
